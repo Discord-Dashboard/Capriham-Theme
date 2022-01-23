@@ -385,7 +385,7 @@ input:checked + .tslider:before {
                                        <%} else if(option.optionType.type == "textarea"){%>
                                        <h4><%=option.optionName%></h4>
                                        <%=option.optionDescription%><br>
-                                       <textarea name="<%=option.optionId%>" <%if(option.optionType.required){%>required<%}%> <%if(option.optionType.disabled){%>disabled<%}%> placeholder="<%=option.optionType.data%>" <%if(actual[s.categoryId][option.optionId]){%>value="<%=actual[s.categoryId][option.optionId]%>"<%}%> <%if(option.optionType.min){%>minlength="<%=option.optionType.min%>"<%}%> <%if(option.optionType.max){%>maxlength="<%=option.optionType.max%>"<%}%> rows="4" class="col-md-12"><%if(actual[s.categoryId][option.optionId]){%><%=actual[s.categoryId][option.optionId]%><%}%></textarea>
+                                       <textarea name="<%=option.optionId%>" <%if(option.optionType.required){%>required<%}%> <%if(option.optionType.disabled){%>disabled<%}%> <%if(option.optionType.min){%>minlength="<%=option.optionType.min%>"<%}%> <%if(option.optionType.max){%>maxlength="<%=option.optionType.max%>"<%}%> rows="4" class="col-md-12"><%if(actual[s.categoryId][option.optionId]){%><%=actual[s.categoryId][option.optionId]%><%}else{%><%=option.optionType.data%><%}%></textarea>
                                        <%}else if(option.optionType.type == "checkbox"){
                                           let val = "";
                                           %>
