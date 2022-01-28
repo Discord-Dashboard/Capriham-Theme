@@ -6,6 +6,7 @@ module.exports = (themeConfig={}) => {
         themeCodename: 'cprihm',
         viewsPath: require('path').join(__dirname, '/views'),
         staticPath: require('path').join(__dirname, '/views/src'),
+        embedBuilderComponent: require('fs').readFileSync(require('path').join(__dirname, '/embedBuilderComponent.txt'), 'utf8'),
         themeConfig: themeConfig,
         init: (app, config)=>{
             app.use('/commands', (req,res)=>{
