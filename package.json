@@ -7,6 +7,7 @@
   },
   "bundleDependencies": false,
   "dependencies": {
+    "discord-dashboard": "^2.3.13",
     "node-fetch": "2.6.6"
   },
   "deprecated": false,
@@ -34,5 +35,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.7.3"
+  "version": "1.7.31"
 }
