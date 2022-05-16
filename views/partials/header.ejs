@@ -4,7 +4,11 @@
         <!-- Sidebar navigation-->
         <nav class="sidebar-nav">
             <ul id="sidebarnav">
-                <li> <a class="waves-effect waves-dark <%if(now == 'index'){%>active<%}%>" href="/" aria-expanded="false"><i class="fas fa-tachometer-alt"></i><span class="hide-menu">Dashboard</span></a>
+                <%
+                let newPage = "/";
+                if(themeConfig.landingPage?.enabled) newPage = "/dash";
+                %>
+                <li> <a class="waves-effect waves-dark <%if(now == 'index'){%>active<%}%>" href="<%-newPage%>" aria-expanded="false"><i class="fas fa-tachometer-alt"></i><span class="hide-menu">Dashboard</span></a>
                 </li>
                 <li> <a class="waves-effect waves-dark <%if(now == 'manage'){%>active<%}%>" href="/manage" aria-expanded="false"><i class="fas fa-user-circle"></i><span class="hide-menu">Manage Guilds</span></a>
                 </li>
