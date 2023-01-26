@@ -1,3 +1,13 @@
+# Important
+
+**This package has been deprecated**
+
+This theme is no longer supported. Please use dbd-soft-ui Theme instead:<br/>https://www.npmjs.com/package/dbd-soft-ui
+
+
+---
+
+
 # Install
 
 ```js
